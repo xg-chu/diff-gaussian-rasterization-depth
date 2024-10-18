@@ -15,11 +15,11 @@ import os
 os.path.dirname(os.path.abspath(__file__))
 
 setup(
-    name="splatting_with_depth_32d",
-    packages=['splatting_with_depth_32d'],
+    name="diff_gaussian_rasterization_depth",
+    packages=['diff_gaussian_rasterization_depth'],
     ext_modules=[
         CUDAExtension(
-            name="splatting_with_depth_32d._C",
+            name="diff_gaussian_rasterization_depth._C",
             sources=[
             "cuda_rasterizer/rasterizer_impl.cu",
             "cuda_rasterizer/forward.cu",
